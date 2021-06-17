@@ -1,8 +1,21 @@
 .card {
-    border: solid red 2px;
     width: 90%;
     margin: 0 auto;
     max-width: 800px;
+    background-color: #111d4a;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 250px;
+    
+}
+
+.card-content {
+    padding: 1em;
 }
 
 .card-title,
@@ -14,13 +27,41 @@
 .card-title {
     color: #05cbe9;
     font-size: 1.75rem;
+    margin: 0;
 }
 
 .card-body {
     font-size: 1rem;
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
 }
 
 .card-btn {
     font-size: 1.25rem;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
+    font-weight: 700;
+    padding: .25em 1.25em;
+    letter-spacing: 1px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+}
+
+.card-read-time {
+    margin: 0;
+    font-size: 16px;
+    opacity: .6;
+    line-height: 1;
+}
+
+.card-read-time span {
+    font-weight: 700;
+    display: block;
+    font-size: 1.25em;
 }
